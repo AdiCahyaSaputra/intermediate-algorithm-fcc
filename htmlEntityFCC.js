@@ -2,23 +2,23 @@ function convertHTML(str) {
   str = str.split("");
   str.forEach(el => {
     if(el === "&") {
-      str.splice(str.indexOf(el), 1, "&amp;" + "amp;");
+      str.splice(str.indexOf(el), 1,  "&amp;");
       return str;
       
     } else if(el === ">") {
-      str.splice(str.indexOf(el), 1, "&amp;" + "gt;");
+      str.splice(str.indexOf(el), 1,  "&gt;");
       return str;
       
     } else if(el === "<") {
-      str.splice(str.indexOf(el), 1, "&amp;" + "lt;");
+      str.splice(str.indexOf(el), 1,  "&lt;");
       return str;
       
     } else if(el === "'") {
-      str.splice(str.indexOf(el), 1, "&amp;" + "apos;");
+      str.splice(str.indexOf(el), 1,  "&apos;");
       return str;
       
     } else if(el === '"') {
-      str.splice(str.indexOf(el), 1, "&amp;" + "quot;");
+      str.splice(str.indexOf(el), 1,  "&quot;");
       return str;
       
     }
